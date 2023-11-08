@@ -25,6 +25,8 @@ deploy {
                 // getTargetTypeClass is a shortcut to get the class type using a string
 
                 frcJava(getArtifactTypeClass('FRCJavaArtifact')) {
+                    gcType = 'Other'
+                    jvmArgs.add("DisableExplicitGC")
                 }
 
                 // Static files artifact
